@@ -260,7 +260,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   barPrefab: {fileID: 6993872100941189407, guid: 6f7d4335519d14e3d8297cca55a2abbb, type: 3}
-  bar: {fileID: 0}
+  bar: {fileID: 1332118421891129736, guid: 6f7d4335519d14e3d8297cca55a2abbb, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
