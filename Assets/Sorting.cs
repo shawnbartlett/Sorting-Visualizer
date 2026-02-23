@@ -14,12 +14,13 @@ public class Sorting : MonoBehaviour
         
         for (int x = 0; x < numbers.Length; x++)
         {
-            numbers[x] = Random.Range(1,10);
-            Debug.Log(numbers[x]);
+            numbers[x] = Random.Range(1,6);
+            
 
             GameObject bar = Instantiate(barPrefab);
-            bar.transform.position = new Vector3(x * 0.5f, 0, 0);
-            bar.transform.localScale = new Vector3(bar.transform.localScale.x, numbers[0], bar.transform.localScale.z);
+            
+            bar.transform.localScale = new Vector3(bar.transform.localScale.x, numbers[x], bar.transform.localScale.z);
+            bar.transform.position = new Vector3(x * 0.3f, numbers[x] / 2f, 0);
         }
 
         
