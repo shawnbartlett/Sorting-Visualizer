@@ -2,7 +2,7 @@
 
 A simple Unity project to practice and visually demonstrate sorting algorithms.
 
-## Sorting Methods
+## Sorting Methods (In Progress)
 
 - EX. Bubble Sort
 - EX. Insertion Sort

@@ -23,13 +23,7 @@ public class Sorting : MonoBehaviour
             System.Array.Sort(numbers); // FIXME: Temporary 
         }
         
-        for (int x = 0; x < numbers.Length; x++){
-        
-            float y = Mathf.Lerp(bars[x].transform.localScale.y, numbers[x], 3f * Time.deltaTime);
-
-            bars[x].transform.localScale = new Vector3(bar.transform.localScale.x, y, bars[x].transform.localScale.z);
-            bars[x].transform.position = new Vector3(x * 0.3f, y / 2f, 0);
-        }
+        animateLerpBars();
     }
 
     void buildStartingBars()
@@ -44,6 +38,17 @@ public class Sorting : MonoBehaviour
             
             bars[x].transform.localScale = new Vector3(bars[x].transform.localScale.x, numbers[x], bars[x].transform.localScale.z);
             bars[x].transform.position = new Vector3(x * 0.3f, numbers[x] / 2f, 0);
+        }
+    }
+
+    void animateLerpBars()
+    {
+        for (int x = 0; x < numbers.Length; x++){
+        
+            float y = Mathf.Lerp(bars[x].transform.localScale.y, numbers[x], 3f * Time.deltaTime);
+
+            bars[x].transform.localScale = new Vector3(bar.transform.localScale.x, y, bars[x].transform.localScale.z);
+            bars[x].transform.position = new Vector3(x * 0.3f, y / 2f, 0);
         }
     }
 }
