@@ -14,6 +14,5 @@ Press S to sort
 
 ## Sorting Methods (In Progress)
 
-- EX. Bubble Sort
 - EX. Insertion Sort
 - EX. Sleep Sort
